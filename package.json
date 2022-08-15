@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lintjs": "next lint --dir src",
-    "lintjs:fix": "npm run lintjs --fix"
+    "lintjs": "next lint",
+    "lintjs:fix": "next lint --fix"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
