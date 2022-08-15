@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "lintjs-fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}' && prettier --write './src/**/*.{js,jsx,ts,tsx}'"
+    "prettier": "prettier --write './src/**/*.{js,jsx,ts,tsx}'",
+    "lintjs": "eslint './src/**/*.{js,jsx,ts,tsx}'",
+    "lintjs-fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
