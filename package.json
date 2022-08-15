@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lintjs-fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}' && prettier --write './src/**/*.{js,jsx,ts,tsx}'"
+    "lintjs-fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}' && prettier --write './src/**/*.{js,jsx,ts,tsx}'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
@@ -28,15 +29,5 @@
     "prettier": "^2.7.1",
     "sass": "^1.54.4",
     "typescript": "4.7.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "npm run lintjs-fix"
-    ]
   }
 }
