@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "prettier": "prettier --write './src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --write './src/**/*.{js,jsx,ts,tsx,css,scss}'",
     "lintjs": "eslint './src/**/*.{js,jsx,ts,tsx}'",
-    "lintjs-fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'"
+    "lintjs-fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
+    "lintcss": "stylelint './src/**/*.{css,scss}'",
+    "lintcss-fix": "stylelint --fix './src/**/*.{css,scss}'"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
@@ -29,6 +31,10 @@
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "sass": "^1.54.4",
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-rscss": "^0.4.0",
     "typescript": "4.7.4"
   }
 }
