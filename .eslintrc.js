@@ -7,7 +7,9 @@ module.exports = {
     // ESLintとPrettierが干渉しないようにする（extendsの最後に記載する）
     'prettier'
   ],
+  // TypeScript用の設定
   plugins: ['@typescript-eslint'],
+  // TypeScript用の設定
   parser: '@typescript-eslint/parser',
   parserOptions: {
     // TypeScriptのLint時に参照するconfigファイルを指定
