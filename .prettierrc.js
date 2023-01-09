@@ -5,7 +5,7 @@ module.exports = {
   singleQuote: true,
   // 1行100文字で折り返す
   printWidth: 100,
-  // 末尾にカンマをつけない
+  // オブジェクトの末尾にカンマをつけない
   trailingComma: 'none',
   // アロー関数の括弧が省略可能でも必ず書く
   arrowParens: 'always',
