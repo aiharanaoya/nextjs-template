@@ -17,5 +17,6 @@ module.exports = {
   },
   // ESLintの対象から外す
   ignorePatterns: ['.eslintrc.js', 'next.config.js'],
+  // ルートディレクトリに置いている場合書いておく
   root: true
 };
