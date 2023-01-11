@@ -1,24 +1,42 @@
 {
   "compilerOptions": {
+    // ES5でJSを出力する
     "target": "es5",
+    // コンパイルする際に使用する組み込みライブラリを指定
     "lib": ["dom", "dom.iterable", "esnext"],
+    // .jsと.jsxもコンパイル対象にする
     "allowJs": true,
+    // *.d.ts ファイルに対する型チェックをスキップする（コンパイル実行時間削減）
     "skipLibCheck": true,
+    // 全ての厳密な型チェックオプションを有効にする
     "strict": true,
+    // インポート時にファイルパスの文字列で大文字小文字を区別する
     "forceConsistentCasingInFileNames": true,
+    // コンパイル結果を出力しなくなる（tscによる型チェックのみを利用）
     "noEmit": true,
+    // CommonJSとES Modules間で相互運用可能なJSコードを出力する
     "esModuleInterop": true,
+    // Babel等の専用のコンパイラやモジュールバンドラに処理を任せたい場合の指定
     "module": "esnext",
+    // モジュール解決の方法の指定
     "moduleResolution": "node",
+    // .jsonのファイルをモジュールとしてインポート出来るようにする
     "resolveJsonModule": true,
+    // 各ファイルを個別のモジュールとしてトランスパイルする
     "isolatedModules": true,
+    // JSXを変更せずにjsxファイルを出力する
     "jsx": "preserve",
+    // 以前コンパイルを実行したコードと現在のコードとの差分を検出して必要なファイルだけをコンパイルする
     "incremental": true,
+    // ベースディレクトリをtsconfig.jsonが置いてあるディレクトリに指定
     "baseUrl": "./",
+    // インポート時に「./src/*」を「@/*」として扱う
     "paths": {
       "@/*": ["./src/*"]
     }
   },
+  // コンパイルする対象ファイル
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  // includeで指定したファイルから特別に除外するファイルを指定
   "exclude": ["node_modules"]
 }
