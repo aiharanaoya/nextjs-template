@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import style from './index.module.scss';
+
 import { Content } from '@/components/content';
+
+import style from './index.module.scss';
 
 const Index: NextPage = () => {
   return (

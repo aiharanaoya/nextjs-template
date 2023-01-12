@@ -2,5 +2,9 @@
   // フォーマッターをPrettierにする
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   // ファイル保存時にフォーマットを実行
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  // ファイル保存時にeslintのautofixを実行
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

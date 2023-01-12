@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import style from './content.module.scss';
 
 type Props = {
