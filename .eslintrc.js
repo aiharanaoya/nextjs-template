@@ -1,12 +1,9 @@
 module.exports = {
   extends: [
-    // Next.jsの基本ESLint構成
     'next/core-web-vitals',
-    // ESLint基本設定
     'eslint:recommended',
-    // インポート順をソートする
     'plugin:import/recommended',
-    // ESLintとPrettierが干渉しないようにする（extendsの最後に記載する）
+    'plugin:storybook/recommended',
     'prettier'
   ],
   // TypeScript用の設定
