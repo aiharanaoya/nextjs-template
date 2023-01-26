@@ -1,3 +1,5 @@
+@use 'src/styles/index.scss' as *;
+
 .button {
   display: flex;
   align-items: center;
@@ -5,4 +7,37 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+
+  &.primary {
+    color: $color-white;
+    background-color: $color-black;
+    border: 1px solid $color-black;
+  }
+
+  &:hover.primary {
+    background-color: $color-button-hover-primary;
+  }
+
+  &:disabled.primary {
+    color: $color-white;
+    cursor: auto;
+    background-color: $color-button-disabled;
+    border: 1px solid $color-button-disabled;
+  }
+
+  &.secondary {
+    background-color: $color-white;
+    border: 1px solid $color-black;
+  }
+
+  &:hover.secondary {
+    background-color: $color-button-hover-secondary;
+  }
+
+  &:disabled.secondary {
+    color: $color-button-disabled;
+    cursor: auto;
+    background-color: $color-light-grey;
+    border: 1px solid $color-grey-4;
+  }
 }

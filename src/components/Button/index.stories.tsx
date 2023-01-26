@@ -23,9 +23,23 @@ export const Secondary: Story = {
   }
 };
 
+export const SecondaryDisabled: Story = {
+  args: {
+    design: BUTTON_DESIGN.SECONDARY,
+    isDisabled: true
+  }
+};
+
 export const Primary: Story = {
   args: {
     design: BUTTON_DESIGN.PRIMARY,
     isDisabled: false
+  }
+};
+
+export const PrimaryDisabled: Story = {
+  args: {
+    design: BUTTON_DESIGN.PRIMARY,
+    isDisabled: true
   }
 };

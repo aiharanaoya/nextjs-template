@@ -30,7 +30,7 @@ export const Button: FC<Props> = ({
   return (
     <button
       type={type}
-      className={clsx(style['button'], !!design && style[`-${design}`])}
+      className={clsx(style['button'], !!design && style[design])}
       disabled={isDisabled}
       onClick={onClick}
     >
