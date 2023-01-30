@@ -1,8 +1,9 @@
 import { clsx } from 'clsx';
 import { FC, MouseEventHandler, ReactNode } from 'react';
 
-import { ButtonDesign, ButtonType, BUTTON_DESIGN, BUTTON_TYPE } from './const';
 import style from './style.module.scss';
+
+import { ButtonDesign, ButtonType, BUTTON_DESIGN, BUTTON_TYPE } from '.';
 
 type Props = {
   /** ボタン内に表示させる要素 */
