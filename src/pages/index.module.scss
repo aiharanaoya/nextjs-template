@@ -1,18 +1,18 @@
 @use 'src/styles/index.scss' as *;
 
 .header {
-  background-color: $color-grey-1;
-  color: $color-white;
   font-size: 24px;
+  color: $color-white;
+  background-color: $color-grey-1;
 }
 
 .main {
-  padding: 40px;
   display: flex;
   flex-direction: column;
+  row-gap: 8px;
   align-items: center;
   justify-content: center;
-  row-gap: 8px;
+  padding: 40px;
 }
 
 .button-text {
