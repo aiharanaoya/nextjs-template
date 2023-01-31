@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "jest",
     "prepare": "husky install",
     "format": "prettier --write './src/**/*.{js,jsx,ts,tsx,css,scss}'",
     "lintjs": "eslint './src/**/*.{js,jsx,ts,tsx}'",
