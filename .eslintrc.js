@@ -18,6 +18,10 @@ module.exports = {
   ignorePatterns: ['.eslintrc.js', 'next.config.js'],
   // ルートディレクトリに置いている場合書いておく
   root: true,
+  // jestを使用する
+  env: {
+    jest: true
+  },
   rules: {
     // インポート文を先頭に書かないとエラーにする
     'import/first': 'error',
