@@ -4,3 +4,4 @@
 npm run lintjs
 npm run lintcss
 npm run format
+npm run test
